@@ -30,6 +30,7 @@ Musk is a supporter of global far-right politics, figures, and political parties
     llm  = OllamaLLM(model="gemma4:31b-cloud",temperature=0.9)
     chain = summary_prompt_template | llm
     response = chain.invoke(input={"information" : information})
+    llm.model.title()
     print(response)
 
 
